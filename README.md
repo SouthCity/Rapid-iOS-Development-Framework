@@ -1,2 +1,2 @@
-# MJHFoundation
-常用方法
+# Rapid iOS development framework
+自用快速开发框架
