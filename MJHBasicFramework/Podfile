@@ -1,0 +1,10 @@
+platform:ios,'8.0'
+target 'MJHBasicFramework' do
+
+pod 'AFNetworking'
+pod 'SDWebImage’
+pod 'UIActivityIndicator-for-SDWebImage'
+pod 'SVProgressHUD'
+
+end
+
