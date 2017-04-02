@@ -44,11 +44,15 @@
 ///判断指定路径上文件是否存在
 + (BOOL)fileExistsAtPath:(NSString *)filePath;
 
+#pragma mark 时间处理相关
+
+///将yyyy-MM-dd HH:mm:ss 截取为yyyy-MM-dd
+- (NSString *)cutOfftimeToDate;
+
 #pragma mark 其他
 
 ///获取手机型号
 + (NSString *)iphoneType;
 
-///将yyyy-MM-dd HH:mm:ss 截取为yyyy-MM-dd
-- (NSString *)cutOfftimeToDate;
+
 @end

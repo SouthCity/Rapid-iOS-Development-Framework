@@ -1,24 +1,22 @@
 //
-//  ViewController.m
+//  MJHTabBarController.m
 //  MJHBasicFramework
 //
-//  Created by chni on 2017/3/23.
+//  Created by chni on 2017/4/2.
 //  Copyright © 2017年 孟家豪. All rights reserved.
 //
 
-#import "ViewController.h"
-
-@interface ViewController ()
-@property (nonatomic, weak)IBOutlet UILabel *label;
+#import "MJHTabBarController.h"
+#import "MJHConfigureServe.h"
+@interface MJHTabBarController ()
 
 @end
 
-@implementation ViewController
+@implementation MJHTabBarController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.label.attributedText = [@"啥啥交互@北京人名不好 @就大家都会 @@@@万科大都汇大都大都大都     @好的了@   @   @@黑色的吹 你是不是" commentsString:@"@" endChar:@" "];
-    
+    [MJHConfigureServe showAD:@"https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1747089969,3539370981&fm=23&gp=0.jpg"];
 }
 
 - (void)didReceiveMemoryWarning {
