@@ -29,7 +29,35 @@
                                  date:(NSDate *)date {
     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
+    
+    [self dateFormatterType:type formatter:dateFormatter];
+    NSString *dateString  = [dateFormatter stringFromDate:date];
+    return dateString;
+}
 
+#pragma mark - 判断时间段
+- (BOOL)dateIsBetweenDate:(NSDate*)beginDate andDate:(NSDate*)endDate {
+    if ([self compare:beginDate] ==NSOrderedAscending)
+        return NO;
+    
+    if ([self compare:endDate] ==NSOrderedDescending)
+        return NO;
+    
+    return YES;
+}
+
+
++ (NSString *)formatDateToString:(NSString *)dateFormat dateString:(NSString *)string formatterType:(MJHFormatterTypeEnum)type {
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
+    [dateFormatter setDateFormat:@"yyyyMMdd"];
+    NSDate *date = [dateFormatter dateFromString:string];
+    [self dateFormatterType:type formatter:dateFormatter];
+    NSString *dateString  = [dateFormatter stringFromDate:date];
+    return dateString;
+}
+
+
++ (void)dateFormatterType:(MJHFormatterTypeEnum)type formatter:(NSDateFormatter *)dateFormatter {
     switch (type) {
         case MJHFormatterShortDateStyle:
             [dateFormatter setDateStyle:NSDateFormatterShortStyle];
@@ -62,26 +90,7 @@
             break;
     }
     
-    NSString *dateString  = [dateFormatter stringFromDate:date];
-    return dateString;
 }
-
-#pragma mark - 判断时间段
-- (BOOL)dateIsBetweenDate:(NSDate*)beginDate andDate:(NSDate*)endDate {
-    if ([self compare:beginDate] ==NSOrderedAscending)
-        return NO;
-    
-    if ([self compare:endDate] ==NSOrderedDescending)
-        return NO;
-    
-    return YES;
-}
-
-
-
-
-
-
 
 
 

@@ -28,7 +28,10 @@
 		D257C5161E82621D0084EA14 /* UIColor+MJHColor.m in Sources */ = {isa = PBXBuildFile; fileRef = D257C5061E82621D0084EA14 /* UIColor+MJHColor.m */; };
 		D257C5171E82621D0084EA14 /* MJHAFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D257C50A1E82621D0084EA14 /* MJHAFNetworking.m */; };
 		D257C5181E82621D0084EA14 /* SVProgressHUD+MJHSVProgressHUDUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D257C50C1E82621D0084EA14 /* SVProgressHUD+MJHSVProgressHUDUtil.m */; };
-		D2F78C2C1E83BF4C00332E71 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F78C2B1E83BF4C00332E71 /* ViewController.m */; };
+		D26342361E88FB6000693D07 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D26342351E88FB6000693D07 /* ViewController.m */; };
+		D266309D1E90BD44006D628B /* MJHConfigureServe.m in Sources */ = {isa = PBXBuildFile; fileRef = D266309C1E90BD44006D628B /* MJHConfigureServe.m */; };
+		D26630A11E90C2BF006D628B /* MJHADView.m in Sources */ = {isa = PBXBuildFile; fileRef = D26630A01E90C2BF006D628B /* MJHADView.m */; };
+		D26630A41E90C547006D628B /* MJHTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D26630A31E90C547006D628B /* MJHTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,8 +96,15 @@
 		D257C50B1E82621D0084EA14 /* SVProgressHUD+MJHSVProgressHUDUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD+MJHSVProgressHUDUtil.h"; sourceTree = "<group>"; };
 		D257C50C1E82621D0084EA14 /* SVProgressHUD+MJHSVProgressHUDUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD+MJHSVProgressHUDUtil.m"; sourceTree = "<group>"; };
 		D257C51C1E8350280084EA14 /* MJHPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJHPrefixHeader.pch; sourceTree = "<group>"; };
-		D2F78C2A1E83BF4C00332E71 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D2F78C2B1E83BF4C00332E71 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D26331AD1E8A36AF00EBD229 /* MJHConfiguresFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJHConfiguresFile.h; sourceTree = "<group>"; };
+		D26342341E88FB6000693D07 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = MJHBasicFramework/ProcessorClass/ViewController.h; sourceTree = SOURCE_ROOT; };
+		D26342351E88FB6000693D07 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = MJHBasicFramework/ProcessorClass/ViewController.m; sourceTree = SOURCE_ROOT; };
+		D266309B1E90BD44006D628B /* MJHConfigureServe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJHConfigureServe.h; sourceTree = "<group>"; };
+		D266309C1E90BD44006D628B /* MJHConfigureServe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJHConfigureServe.m; sourceTree = "<group>"; };
+		D266309F1E90C2BF006D628B /* MJHADView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJHADView.h; sourceTree = "<group>"; };
+		D26630A01E90C2BF006D628B /* MJHADView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJHADView.m; sourceTree = "<group>"; };
+		D26630A21E90C547006D628B /* MJHTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJHTabBarController.h; sourceTree = "<group>"; };
+		D26630A31E90C547006D628B /* MJHTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJHTabBarController.m; sourceTree = "<group>"; };
 		DA32244329D02E54DA392DB5 /* Pods-MJHBasicFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MJHBasicFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-MJHBasicFramework/Pods-MJHBasicFramework.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -168,10 +178,10 @@
 			children = (
 				D257C4C11E8254360084EA14 /* Configure */,
 				D257C4C31E8254360084EA14 /* Main */,
-				D257C5191E834FE90084EA14 /* Class */,
-				D257C51A1E834FE90084EA14 /* Components */,
-				D257C51B1E834FE90084EA14 /* DataStore */,
+				D257C5191E834FE90084EA14 /* ProcessorClass */,
 				D257C4C21E8254360084EA14 /* Library */,
+				D2BB0D3B1E89EEA9003FAA5F /* Components */,
+				D2BB0D3C1E89EECD003FAA5F /* DataStore */,
 				D257C4C61E8254360084EA14 /* Resources */,
 				D257C48D1E824DA70084EA14 /* Supporting Files */,
 			);
@@ -208,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				D257C51C1E8350280084EA14 /* MJHPrefixHeader.pch */,
+				D26331AD1E8A36AF00EBD229 /* MJHConfiguresFile.h */,
 			);
 			path = Configure;
 			sourceTree = "<group>";
@@ -215,6 +226,7 @@
 		D257C4C21E8254360084EA14 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				D266309E1E90C29A006D628B /* MJHADView */,
 				D257C4F11E82621D0084EA14 /* MJHFoundation */,
 			);
 			path = Library;
@@ -224,8 +236,12 @@
 			isa = PBXGroup;
 			children = (
 				D257C4961E824DA70084EA14 /* Main.storyboard */,
+				D266309B1E90BD44006D628B /* MJHConfigureServe.h */,
+				D266309C1E90BD44006D628B /* MJHConfigureServe.m */,
 				D257C4C41E8254360084EA14 /* MJHAppDelegate.h */,
 				D257C4C51E8254360084EA14 /* MJHAppDelegate.m */,
+				D26630A21E90C547006D628B /* MJHTabBarController.h */,
+				D26630A31E90C547006D628B /* MJHTabBarController.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -290,23 +306,33 @@
 			path = MJHNetworking;
 			sourceTree = "<group>";
 		};
-		D257C5191E834FE90084EA14 /* Class */ = {
+		D257C5191E834FE90084EA14 /* ProcessorClass */ = {
 			isa = PBXGroup;
 			children = (
-				D2F78C2A1E83BF4C00332E71 /* ViewController.h */,
-				D2F78C2B1E83BF4C00332E71 /* ViewController.m */,
+				D26342341E88FB6000693D07 /* ViewController.h */,
+				D26342351E88FB6000693D07 /* ViewController.m */,
 			);
+			name = ProcessorClass;
 			path = Class;
 			sourceTree = "<group>";
 		};
-		D257C51A1E834FE90084EA14 /* Components */ = {
+		D266309E1E90C29A006D628B /* MJHADView */ = {
+			isa = PBXGroup;
+			children = (
+				D266309F1E90C2BF006D628B /* MJHADView.h */,
+				D26630A01E90C2BF006D628B /* MJHADView.m */,
+			);
+			path = MJHADView;
+			sourceTree = "<group>";
+		};
+		D2BB0D3B1E89EEA9003FAA5F /* Components */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Components;
 			sourceTree = "<group>";
 		};
-		D257C51B1E834FE90084EA14 /* DataStore */ = {
+		D2BB0D3C1E89EECD003FAA5F /* DataStore */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -508,9 +534,12 @@
 				D257C4C81E8254360084EA14 /* MJHAppDelegate.m in Sources */,
 				D257C50E1E82621D0084EA14 /* NSData+MJHData.m in Sources */,
 				D257C50F1E82621D0084EA14 /* NSDate+MJHDate.m in Sources */,
-				D2F78C2C1E83BF4C00332E71 /* ViewController.m in Sources */,
+				D26630A11E90C2BF006D628B /* MJHADView.m in Sources */,
+				D266309D1E90BD44006D628B /* MJHConfigureServe.m in Sources */,
+				D26342361E88FB6000693D07 /* ViewController.m in Sources */,
 				D257C5161E82621D0084EA14 /* UIColor+MJHColor.m in Sources */,
 				D257C5131E82621D0084EA14 /* NSString+MJHHelper.m in Sources */,
+				D26630A41E90C547006D628B /* MJHTabBarController.m in Sources */,
 				D257C5111E82621D0084EA14 /* NSObject+MJHRuntime.m in Sources */,
 				D257C5101E82621D0084EA14 /* NSDictionary+MJHDictionary.m in Sources */,
 				D257C48F1E824DA70084EA14 /* main.m in Sources */,

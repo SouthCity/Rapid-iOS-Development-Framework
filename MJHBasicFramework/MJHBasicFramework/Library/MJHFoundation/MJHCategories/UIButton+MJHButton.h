@@ -16,6 +16,7 @@
  *  倒计时
  *
  *  @param title       倒计时完成后显示标题
+ *  @param time        倒计时时间
  *  @param cancelBlock 取消或完成计时回调
  *
  *  @return 定时器对象

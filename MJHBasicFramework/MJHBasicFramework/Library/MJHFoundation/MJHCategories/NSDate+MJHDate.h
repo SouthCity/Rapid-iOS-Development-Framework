@@ -56,4 +56,15 @@ typedef  NS_ENUM(NSInteger,MJHFormatterTypeEnum) {
  *  @return bool值
  */
 - (BOOL)dateIsBetweenDate:(NSDate*)beginDate andDate:(NSDate*)endDate;
+
+/**
+ *
+ *  @param dateFormat yyyyMMdd
+ *  @param string 20170331
+ *  @param type  MJHFormatterMediumDateStyle
+ *
+ *  @return 2017年3月31日
+ */
++ (NSString *)formatDateToString:(NSString *)dateFormat dateString:(NSString *)string formatterType:(MJHFormatterTypeEnum)type;
+
 @end

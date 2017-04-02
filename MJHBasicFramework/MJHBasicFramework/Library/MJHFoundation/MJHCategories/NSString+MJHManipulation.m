@@ -11,11 +11,12 @@
 @implementation NSString (MJHManipulation)
 
 - (NSAttributedString *)commentsString:(NSString *)begin
-                               endChar:(NSString *)end {
+                               endChar:(NSString *)end
+                                 color:(UIColor *)fontColor{
     
     
     NSDictionary *attributes = @{
-                                 NSForegroundColorAttributeName:[UIColor redColor]
+                                 NSForegroundColorAttributeName:fontColor
                                  };
     NSMutableAttributedString *arrString = [[NSMutableAttributedString alloc]initWithString:self];
     int i=0;

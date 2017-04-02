@@ -12,7 +12,16 @@
 
 
 
+/**
+ 改变字符串中指定两字符间字符串的颜色
+
+ @param begin 开始字符
+ @param end 结束字符
+ @param fontColor 颜色
+ @return NSAttributedString
+ */
 - (NSAttributedString *)commentsString:(NSString *)begin
-                               endChar:(NSString *)end;
+                               endChar:(NSString *)end
+                                 color:(UIColor *)fontColor;
 
 @end
