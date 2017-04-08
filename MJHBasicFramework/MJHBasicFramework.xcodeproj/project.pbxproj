@@ -32,6 +32,7 @@
 		D266309D1E90BD44006D628B /* MJHConfigureServe.m in Sources */ = {isa = PBXBuildFile; fileRef = D266309C1E90BD44006D628B /* MJHConfigureServe.m */; };
 		D26630A11E90C2BF006D628B /* MJHADView.m in Sources */ = {isa = PBXBuildFile; fileRef = D26630A01E90C2BF006D628B /* MJHADView.m */; };
 		D26630A41E90C547006D628B /* MJHTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D26630A31E90C547006D628B /* MJHTabBarController.m */; };
+		D2FB99691E9788DF00BA05CA /* UIImageView+MJHImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FB99681E9788DF00BA05CA /* UIImageView+MJHImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,8 @@
 		D26630A01E90C2BF006D628B /* MJHADView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJHADView.m; sourceTree = "<group>"; };
 		D26630A21E90C547006D628B /* MJHTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJHTabBarController.h; sourceTree = "<group>"; };
 		D26630A31E90C547006D628B /* MJHTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJHTabBarController.m; sourceTree = "<group>"; };
+		D2FB99671E9788DF00BA05CA /* UIImageView+MJHImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+MJHImageView.h"; sourceTree = "<group>"; };
+		D2FB99681E9788DF00BA05CA /* UIImageView+MJHImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+MJHImageView.m"; sourceTree = "<group>"; };
 		DA32244329D02E54DA392DB5 /* Pods-MJHBasicFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MJHBasicFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-MJHBasicFramework/Pods-MJHBasicFramework.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -291,6 +294,8 @@
 				D257C5061E82621D0084EA14 /* UIColor+MJHColor.m */,
 				D2160C1F1E83B256000EC269 /* NSString+MJHManipulation.h */,
 				D2160C201E83B256000EC269 /* NSString+MJHManipulation.m */,
+				D2FB99671E9788DF00BA05CA /* UIImageView+MJHImageView.h */,
+				D2FB99681E9788DF00BA05CA /* UIImageView+MJHImageView.m */,
 			);
 			path = MJHCategories;
 			sourceTree = "<group>";
@@ -535,6 +540,7 @@
 				D257C50E1E82621D0084EA14 /* NSData+MJHData.m in Sources */,
 				D257C50F1E82621D0084EA14 /* NSDate+MJHDate.m in Sources */,
 				D26630A11E90C2BF006D628B /* MJHADView.m in Sources */,
+				D2FB99691E9788DF00BA05CA /* UIImageView+MJHImageView.m in Sources */,
 				D266309D1E90BD44006D628B /* MJHConfigureServe.m in Sources */,
 				D26342361E88FB6000693D07 /* ViewController.m in Sources */,
 				D257C5161E82621D0084EA14 /* UIColor+MJHColor.m in Sources */,

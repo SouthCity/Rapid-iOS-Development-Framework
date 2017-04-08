@@ -19,6 +19,7 @@
 #import "UIColor+MJHColor.h"
 #import "NSString+MJHRestfulRequestUtil.h"
 #import "NSString+MJHManipulation.h"
+#import "UIImageView+MJHImageView.h"
 
 #import "UIButton+MJHButton.h"
 #import "SVProgressHUD+MJHSVProgressHUDUtil.h"
