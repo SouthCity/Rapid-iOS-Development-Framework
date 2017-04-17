@@ -45,7 +45,8 @@ typedef  NS_ENUM(NSInteger,MJHFormatterTypeEnum) {
  */
 + (NSString *)getFormatterDateByStyle:(MJHFormatterTypeEnum)type
                                  date:(NSDate *)date;
-
+///获取上午、下午
++ (NSString *)getAMAndPM;
 
 /**
  *  判断时间是否在一段时间范围内

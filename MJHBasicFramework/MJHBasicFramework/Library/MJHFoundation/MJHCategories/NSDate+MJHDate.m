@@ -36,6 +36,16 @@
 }
 
 #pragma mark - 判断时间段
++ (NSString *)getAMAndPM {
+    NSDateFormatter *format = [[NSDateFormatter alloc] init];
+    
+    format.AMSymbol = @"上午";
+    format.PMSymbol = @"下午";
+    format.dateFormat = @"aaa";
+    NSString *timeStr = [format stringFromDate:[NSDate date]];
+    return timeStr;
+}
+
 - (BOOL)dateIsBetweenDate:(NSDate*)beginDate andDate:(NSDate*)endDate {
     if ([self compare:beginDate] ==NSOrderedAscending)
         return NO;
