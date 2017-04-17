@@ -1,0 +1,18 @@
+//
+//  MJHPrefixHeader.pch
+//  MJHBasicFramework
+//
+//  Created by chni on 2017/3/23.
+//  Copyright © 2017年 孟家豪. All rights reserved.
+//
+
+#ifndef MJHPrefixHeader_pch
+#define MJHPrefixHeader_pch
+
+
+
+#import "MJHCategoriesHeader.h"
+#import "MJHConfiguresFile.h"
+
+
+#endif /* MJHPrefixHeader_pch */
