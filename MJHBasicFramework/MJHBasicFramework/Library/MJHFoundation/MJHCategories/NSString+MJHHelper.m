@@ -15,18 +15,27 @@
 #pragma mark 验证
 
 - (BOOL)isNull {
-    if ([self isEqualToString:@""]) {
-        return YES;
-    }else if (self == nil){
-        return YES;
-    }else if ([self isKindOfClass:[NSNull class]]){
+    if (self == nil){
         return YES;
     }else if (!self){
         return YES;
-    }else{
+    }
+    else if ([self isKindOfClass:[NSNull class]]){
+        return YES;
+    }
+    else if ([self isEqualToString:@""]) {
+        return YES;
+    }
+    else if ([[self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] length] == 0) {
+        return YES;
+    }
+    else {
         return NO;
     }
 }
+
+
+
 
 - (BOOL)isValidatePhoneNumber {
     NSString *regex = @"^1[3|4|5|7|8][0-9]\\d{8}$";
